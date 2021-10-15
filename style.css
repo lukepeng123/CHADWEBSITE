@@ -1,11 +1,11 @@
 body {
-  background-color: darkgray;
+  background-color: black;
   font-family: Arial;
   margin-left: 25px;
   color: white;
 }
 h1 {
-  color: lightblue;
+  color: DodgerBlue;
   text-align: center;
   font-family: Arial;
 }
