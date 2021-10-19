@@ -1,11 +1,11 @@
 body {
   background-color: black;
-  font-family: Helvetica;
+  font-family: 'Trebuchet MS', sans-serif;
   margin-left: 50px;
   color: white;
 }
 h1 {
   color: DodgerBlue;
   text-align: center;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
