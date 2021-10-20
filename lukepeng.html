@@ -39,18 +39,28 @@
       Mauris a diam maecenas sed enim ut sem viverra aliquet. In hendrerit gravida rutrum quisque non tellus orci ac. Sit amet nulla facilisi morbi. Mauris sit amet massa vitae tortor condimentum lacinia quis. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Eu facilisis sed odio morbi quis commodo odio aenean sed. Id ornare arcu odio ut. Justo nec ultrices dui sapien. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Proin sed libero enim sed faucibus. Quis risus sed vulputate odio ut enim blandit. Velit scelerisque in dictum non consectetur a erat. Etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum. A erat nam at lectus urna. Enim ut tellus elementum sagittis. Pellentesque nec nam aliquam sem et tortor consequat id. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Eget lorem dolor sed viverra.
     </p>
   
-    <img id="mpic" src="mpic" style="display:none;"/>
-    <button onclick="picture()">Click me for an image!</button>
+    <button id="button1" onclick="example()">
+      Click me!
+    </button>
     
     <img src="gigachad.jpg" alt="Gigachad">
     
   </body>
   
   <script type="text/javascript">
-        function picture(){ 
-        var pic = "https://www.meme-arsenal.com/memes/8b2d269c332af780b87c403ea8c55e96.jpg"
-        document.getElementById('mpic').style.display='block';
-        }
+    var clicked = true;
+
+    function example(){
+      if (flag){
+       document.getElementById("button1").style.background = "chartreuse";
+       document.getElementById("button1").innerHTML = "Click me again!";
+       clicked = false;
+      } else {
+       document.getElementById("button1").style.background = "whitesmoke";
+       document.getElementById("button1").innerHTML = "Click me again!";
+       clicked = true;
+      }
+    }
    </script>
   
 </html>
