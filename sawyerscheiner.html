@@ -4,6 +4,10 @@
     <script>
       function buttonAnimate() {
         document.getElementById("chadbutton").style.animationName = "buttonAnim";
+        setTimeout(returnToDefault(), 5000);
+      }
+      function returnToDefault() {
+        document.getElementById("chadbutton").style.animationName = "buttonDef";
       }
     </script>
     
