@@ -4,16 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <script>
-      function sleep(ms) {
-      return new Promise(resolve => setTimeout(resolve, ms));
-   }
+      var clicked=true;
       
       function buttonAnimate() {
-        document.getElementById("chadbutton").style.animationName = "buttonAnim";
-      }
-      function returnToDefault() {
-        document.getElementById("chadbutton").style.animationName = "buttonDef";
-      }
+         if (clicked){
+          document.getElementById("button1").style.animationName = "buttonDef";
+          document.getElementById("button1").style.animationName = "buttonAnim";
+          clicked = false;
+        } else {
+          document.getElementById("button1").style.animationName = "buttonDef";
+          document.getElementById("button1").style.animationName = "buttonAnim";
+          clicked = true;
+        }
+      }  
+     
     </script>
     
     <style>
