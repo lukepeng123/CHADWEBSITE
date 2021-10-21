@@ -2,9 +2,14 @@
 <html>
   <head>
     <script>
+      function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+   }
+      
       function buttonAnimate() {
         document.getElementById("chadbutton").style.animationName = "buttonAnim";
-        setTimeout(returnToDefault(), 10000);
+        sleep(10000);
+        document.getElementById("chadbutton").style.animationName = "buttonDef";
       }
       function returnToDefault() {
         document.getElementById("chadbutton").style.animationName = "buttonDef";
