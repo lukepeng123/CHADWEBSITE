@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+      function buttonAnimate() {
+        document.getElementById('chadbutton').style.animation-name = "button";
+      }
+    </script>
+    
     <style>
       @keyframes title {
         0% {margin-left: 600px; margin-right: 600px;}
@@ -8,6 +14,13 @@
         50% {margin-left: 600px; margin-right: 600px;}
         75% {margin-left: 1050px; margin-right: 150px;}
         100% {margin-left: 600px; margin-right: 600px;}
+        }
+      @keyframes button {
+        0% {color: red; border-color: red;}
+        25% {color: blue; border-color: blue;}
+        50% {color: green; border-color: green;}
+        75% {color: yellow; border-color: yellow;}
+        100% {color: red; border-color: red}
         
       }
       body {font-family: Helvetica, sans-serif;background-color: black; color: #d4d4d4; margin-left: 45px;}
@@ -22,6 +35,8 @@
         border-radius: 10px;
         height: 50px;
         width: 150px;
+        animation-duration: 10s;
+        animation-timing-function: linear;
       }
     </style>
   </head>
@@ -50,7 +65,7 @@
     
     button for chads:<br>
     <div>
-      <button id= "chadbutton" class="chadbutton">Chad Button</button>
+      <button id= "chadbutton" class="chadbutton" onClick="buttonAnimate()">Chad Button</button>
     </div>
     
     
