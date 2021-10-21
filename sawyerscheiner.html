@@ -3,7 +3,7 @@
   <head>
     <script>
       function buttonAnimate() {
-        document.getElementById('chadbutton').style.animation-name = "button";
+        document.getElementById('chadbutton').style.animation-name = "buttonAnim";
       }
     </script>
     
@@ -15,13 +15,17 @@
         75% {margin-left: 1050px; margin-right: 150px;}
         100% {margin-left: 600px; margin-right: 600px;}
         }
-      @keyframes button {
+      @keyframes buttonAnim {
         0% {color: red; border-color: red;}
         25% {color: blue; border-color: blue;}
         50% {color: green; border-color: green;}
         75% {color: yellow; border-color: yellow;}
         100% {color: red; border-color: red}
         
+      }
+      @keyframes buttonDef {
+        0% {}
+        100% {}
       }
       body {font-family: Helvetica, sans-serif;background-color: black; color: #d4d4d4; margin-left: 45px;}
       h1 {font-family: "Trebuchet MS", sans-serif; color: red; text-align: center;outline-style: dotted;outline-width: 2px;outline-color: red;margin-left: 600px;margin-right: 600px;animation-name: title; animation-duration: 20s; animation-iteration-count: infinite; animation-timing-function: linear;}
